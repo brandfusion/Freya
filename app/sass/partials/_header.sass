@@ -1,0 +1,86 @@
+.header-upper
+  background-color: #000
+  color: #fff
+  font-size: 0.9em
+  height: 3rem
+  line-height: 3rem
+  // background-color: #fff
+  border-bottom: 1px solid #000
+  i 
+    vertical-align: middle      
+    line-height: 2rem  
+    &:before 
+      line-height: 2rem
+      height: 2rem
+      vertical-align: middle
+.header-middle 
+  background-color: #f9f9f9      
+.minicart
+  position: relative
+  .minicart-summary
+    background-color: $accent
+    border-radius: 100%
+    font-size: 0.7em   
+    width: 1.8em
+    height: 1.8em
+    line-height: 1.8em
+    display: block
+    vertical-align: middle
+    position: absolute
+    color: #fff
+    top: 0
+    right: -0.4em
+    text-align: center
+.header-middle-logo    
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  height: 5rem
+  margin: 0 0 1rem
+.header-middle-content
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  height: 5rem
+  margin: 0 0 1rem
+  .search-box
+    // width: 20rem
+    margin-left: 1em
+  .header-search    
+    display: flex 
+    justify-content: flex-end
+    input 
+      line-height: 3em
+      padding: 0 0.5rem  
+      width: 10rem    
+      background-color: #fff  
+      color: #000
+      vertical-align: middle   
+      transition: all 0.3s ease-in-out
+      +placeholder
+        font-style: "Merriweather Sans", sans-serif
+        font-weight: 300
+        color: #aaa 
+        font-size: 0.9em
+      &:focus       
+        width: 12rem  
+        font-style: "Merriweather Sans", sans-serif   
+        +placeholder
+          color: #000
+    button  
+      width: 3em     
+      background-color: #fff
+      color: #000      
+      font-size: 1em
+      vertical-align: middle  
+      transition: all 0.3s ease-in-out     
+      i 
+        transition: all 0s linear
+        float: none
+      &:hover 
+        background-color: $accent
+        color: #fff  
+.header-lower 
+  // border-top: 1px solid #000
+  // border-bottom: 1px solid #000
+  background-color: #ffffff

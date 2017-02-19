@@ -1,0 +1,115 @@
+#slider
+  height: 80vh
+  overflow: hidden
+  img 
+    width: 100%
+.slick-dots
+  bottom: 10px
+.banner-half-right-text
+  display: flex 
+  align-items: center
+  justify-content: center
+  .image 
+    width: 70%
+    padding-left: 20%
+    padding-right: 15px
+  .description
+    width: 30%
+    h3 
+      margin: 0.5em 0
+    p 
+      font-weight: 300 
+      margin: 0
+    .btn-border
+      padding: 0.5em 1em    
+.banner-half-left-text
+  display: flex 
+  align-items: center
+  justify-content: center
+  .image 
+    width: 70%
+    padding-right: 20%
+    padding-left: 15px
+  .description
+    width: 30%
+    h3 
+      margin: 0.5em 0
+    p 
+      font-weight: 300 
+      margin: 0
+    .btn-border
+      padding: 0.5em 1em    
+.banner-half-bottom-text
+  display: flex 
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  .image 
+    width: 100%
+    // padding-left: 20%
+    // padding-right: 15px
+    height: 310px
+    overflow: hidden
+  .description
+    padding-top: 15px
+    width: 100%
+    text-align: center
+    h3 
+      margin: 0.5em 0
+    p 
+      font-weight: 300 
+      margin: 0
+    .btn-border
+      padding: 0.5em 1em          
+.banners 
+  display: flex 
+  flex-direction: row
+  justify-content: flex-start
+  align-items: flex-start
+  flex-wrap: wrap
+  .item
+    margin-bottom: 30px
+  img 
+    width: 100%
+.banner-full-width
+  margin: 4rem 0
+  .description    
+    position: absolute
+    left: 50%
+    top: 50%
+    display: flex
+    justify-content: center
+    /* align-items: center */
+    text-align: -webkit-center
+    font-size: 1em 
+    width: 20em
+    height: 20em
+    margin-top: -10em
+    margin-left: -10em
+    flex-direction: column
+    span 
+      font-weight: 600
+      color: $accent
+  .image 
+    height: 40rem
+    overflow: hidden
+  .btn-checkout
+    i
+      transform: translateX(-20px) rotateX(180deg)  
+    &:hover 
+      i 
+        transform: translateX(0px) rotateX(0deg)    
+  // .btn-border
+  //   border: none 
+  //   background-color: $accent
+  //   color: #fff    
+.container-fluid
+  .banners
+    .description
+      text-align: center
+    .banner-half-left-text
+      .image
+        padding-right: 0
+    .banner-half-right-text
+      .image
+        padding-left: 0  
