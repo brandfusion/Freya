@@ -20,10 +20,11 @@
     line-height: 1
     font-weight: 300
     &:hover 
-      font-weight: 400
+      color: $accent
 .nav-upper
   text-align: right
   font-size: 1.4rem
+  height: 3rem
   ul
     +h-nav  
     display: inline-block   
@@ -63,19 +64,24 @@
     background-color: #fff
     color: #000
     li 
-      padding: 0.3em 1em
+      padding: 0 1em
       float: none
+      margin-bottom: 0.5em
     a 
       height: auto 
       display: block
       padding: 0
       color: inherit
+      line-height: 1.4
       &:hover
-        font-weight: 400
+        color: $accent
         // color: $accent
   .login-social-media
     padding-top: 1em
     color: inherit
+    p 
+      font-size: 0.8em     
+      font-weight: 600
     a 
       float: left
       width: 2.5em
@@ -93,11 +99,20 @@
   li:first-child
     a 
       padding-left: 0  
+  .dropdown 
+    a:after 
+      font-family: "FontAwesome"
+      color: $primary
+      content: "\f107"
+      margin-left: 0.5em
+    li
+      a:after 
+        display: none     
   a 
     color: #000
     font-weight: 300
     font-size: 1.2rem   
-    padding: 0 1em  
+    padding: 0.5em 1em  
     line-height: 2
     display: block
     letter-spacing: 1px
@@ -112,24 +127,38 @@
     align-items: flex-start
     flex-wrap: wrap
     z-index: 99
-    margin: 0 -2rem
-    padding: 1rem 2rem 2rem
+    margin: 0 -4rem
+    padding: 2rem 4rem
     background-color: #fff
     transition: all 0.3s ease-in-out
     opacity: 0
+    border-bottom: 1px solid #e8e8e8
+    border-left: 1px solid #e8e8e8
+    border-right: 1px solid #e8e8e8
     li 
       width: 20%
       float: none
       margin-bottom: 1em
       padding-right: 2rem
+      .style 
+        border-right: 1px solid $border
+        padding: 1rem 0
+      &:last-child
+        .style
+          border: none  
     a 
       line-height: 2
-      font-weight: 400  
-      // border-bottom: 1px solid $border
+      font-weight: 400       
       letter-spacing: 0px
       font-size: 1rem
       font-weight: 400
       padding: 0 0.5em
+      margin-bottom: 0.5em
+      text-transform: uppercase
+      letter-spacing: 1px
+      // color: $accent
+      &:hover 
+        color: $accent
   .M3 
     li
       width: 100% 
@@ -137,19 +166,15 @@
     a 
       font-weight: 300 
       border: none
-      font-style: 0.8em
+      font-size: 0.9em
       line-height: 2   
+      text-transform: none
+      letter-spacing: 0px
+      // color: #000
   .dropdown
-    position: static
-    // & .M2.open 
-    //   display: flex
+    position: static  
     &:hover
       .M2 
         display: flex
         opacity: 1
-    // &:before
-    //   font-family: "FontAwesome"
-    //   content: "\f107"
-    //   color: $accent
-    //   margin-left: 0.3em
-    //   float: right
+  
