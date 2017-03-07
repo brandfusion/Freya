@@ -57,6 +57,8 @@ $(function(){
 		scrollingUp = scrollTop > prevScrollValue ? false : true;
 		prevScrollValue = scrollTop;
 
+		$('.parallax img').css("transform",'translateY('+ -scrollTop/4 +'px)');
+
 		if (scrollTop > 36) {
 			$('#header').addClass("fixed");
 			// $('body').css("paddingTop", headerUpperHeight);
