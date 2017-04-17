@@ -2,12 +2,12 @@
   .nav-auxiliary
     color: #9c9c9c
     i 
-      margin-right: 0.5em
-      font-size: 1.7em
-      vertical-align: baseline
+      margin-right: 0.5rem
+      font-size: 1rem
+      vertical-align: baseline     
       color: $accent
     li 
-      margin-right: 1em  
+      margin-right: 1rem  
 .nav-auxiliary
   ul  
     +h-nav
@@ -16,24 +16,31 @@
       padding-left: 0px       
   a 
     color: inherit   
-    padding: 0.5em
+    padding: 0.5rem
     line-height: 1
     font-weight: 300
+    font-size: 0.75rem
     &:hover 
       color: $accent
 .nav-upper
   text-align: right
-  font-size: 1.4rem
-  height: 3rem
+  font-size: inherit
+  height: 2rem
   ul
-    +h-nav  
-    display: inline-block   
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: flex-end
+    align-items: center
   a 
-    color: inherit  
-    height: 3rem
-    padding: 0.5rem 1rem
-    line-height: 1
-    vertical-align: top  
+    color: inherit 
+    height: 2rem  
+    font-size: 1rem 
+    padding: 0 0.5rem
+    line-height: 2rem
+    display: flex 
+    align-items: center
+    vertical-align: top    
   li 
     position: relative  
   li:hover 
@@ -53,41 +60,42 @@
     display: none
     position: absolute
     text-align: left
-    font-size: 0.7em
+    font-size: 0.75rem
     font-weight: 300
     border: 1px solid #000 
-    top: 2.8rem
+    top: 1.95rem
     left: 0
-    width: 12em  
-    padding: 0.5em 0
+    width: 12rem  
+    padding: 0.5rem
     z-index: 10
     background-color: #fff
     color: #000
     li 
-      padding: 0 1em
-      float: none
-      margin-bottom: 0.5em
+      // padding: 0 1rem
+      // float: none
+      // margin-bottom: 0.5rem
     a 
       height: auto 
+      font-size: inherit
       display: block
       padding: 0
       color: inherit
-      line-height: 1.4
+      line-height: 2
       &:hover
         color: $accent
         // color: $accent
   .login-social-media
-    padding-top: 1em
+    padding-top: 1rem
     color: inherit
     p 
-      font-size: 0.8em     
+      font-size: 0.625rem     
       font-weight: 600
     a 
       float: left
-      width: 2.5em
+      width: 2.5rem
       border: 1px solid $border
       text-align: center
-      margin-right: 0.5em
+      margin-right: 0.5rem
       &:hover      
         i 
           font-weight: 600    
@@ -111,8 +119,8 @@
   a 
     color: #000
     font-weight: 300
-    font-size: 1.2rem   
-    padding: 0.5em 1em  
+    font-size: 0.875rem   
+    padding: 0.5rem 1rem  
     line-height: 2
     display: block
     letter-spacing: 1px

@@ -2,6 +2,21 @@
 	label
 		font-weight: 300
 		cursor: pointer
+		margin: 0
+		color: #333
+		font-weight: 300	
+	.filter-item
+		margin-bottom: 1rem			
+	.colors 
+		ul 
+			display: flex	
+			flex-direction: row
+			flex-wrap: wrap	
+		li 
+			margin-right: 0.5rem
+		a
+			width: 2rem
+			height: 2rem
 	.inline 
 		ul 
 			display: flex 
@@ -10,10 +25,23 @@
 		input 
 			display: none
 		li 
-			padding: 0 0.5em
-			&:first-child 
-				padding-left: 0	
+			margin-right: 0.5rem
+			// &:first-child 
+			// 	padding-left: 0	
+	.input 
+		label
+			&:before
+				content: "\f372"			
+				font-family: "Ionicons"
+		input 
+			display: none		
 	.filter-header
+		font-size: 1.25rem
+		font-weight: 400
 		&:after 
 			font-family: "Ionicons"
-			content: "\f462"			
+			content: "\f462"	
+			float: right			
+	a 
+		color: #333
+		font-weight: 300		

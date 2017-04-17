@@ -30,6 +30,7 @@ gulp.task('scripts', function() {
   	.pipe(sourcemaps.init())    
     .pipe(concat('main.js'))
     .pipe(sourcemaps.write('.'))
+    .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('./_build/assets/js/'));
 });
 gulp.task('build-scripts', function() {
